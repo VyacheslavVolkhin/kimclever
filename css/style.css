@@ -2280,6 +2280,10 @@ body:has(.action-search .btn-popup.active) .wrap {
 .item-tile-logo .tile-title:first-letter {
   color: var(--clr-att-second);
 }
+.item-tile-logo .tile-title:after {
+  content: "к";
+  color: var(--clr-att-second);
+}
 .item-tile-photo {
   font-weight: 500;
   font-size: 14px;
@@ -4033,6 +4037,23 @@ body:has(.action-search .btn-popup.active) .wrap {
   }
 }
 @media (max-width: 1023px) {
+  .side-wrap:has(.side-form-box) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .side-wrap:has(.side-form-box) .side-form-box {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+  .side-wrap:has(.side-form-box) .side-form-box:last-child {
+    margin-bottom: 3rem;
+  }
   .info-lead-box .sl-info-wrap {
     width: 100%;
     text-align: center;
@@ -7040,6 +7061,13 @@ body.popup-open:has(.popup-cookie.active) {
   align-items: flex-end;
   padding: var(--paddingContainer);
   background: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: auto;
+  height: auto;
+  padding-top: 0;
 }
 .popup-cookie .popup-box {
   width: 100%;

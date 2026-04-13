@@ -670,7 +670,7 @@
                                     </div>
                                     <div class="field-button">
                                         <button type="submit" class="btn button-att-third">
-                                            <div class="button-title">Найти</div>
+                                            <span class="button-title">Найти</span>
                                         </button>
                                     </div>
                                 </form>
@@ -938,19 +938,19 @@
                             <div class="frm-row">
                                 <div class="frm-field">
                                     <div class="frm-select">
-                                        <input type="radio" name="delivery" id="del01" checked />
+                                        <input type="radio" name="delivery" id="del01" checked data-content="address" />
                                         <label for="del01">СДЭК</label>
                                     </div>
                                     <div class="frm-select">
-                                        <input type="radio" name="delivery" id="del02" />
+                                        <input type="radio" name="delivery" id="del02" data-content="address" />
                                         <label for="del02">Почта России</label>
                                     </div>
                                     <div class="frm-select">
-                                        <input type="radio" name="delivery" id="del03" />
+                                        <input type="radio" name="delivery" id="del03" data-content="" />
                                         <label for="del03">Самовывоз</label>
                                     </div>
                                 </div>
-                                <div class="frm-field">
+                                <div class="frm-field frm-content" data-content="address">
                                     <div class="frm-field">
                                         <div class="frm-field-input type-invert">
                                             <div class="field-title">Адрес</div>
@@ -1023,7 +1023,7 @@
                                 <div class="frm-row">
                                     <div class="frm-field">
                                         <button type="submit" class="btn button-base-title" form="form-order">
-                                            <div class="button-title">Подтвердить заказ</div>
+                                            <span class="button-title">Подтвердить заказ</span>
                                         </button>
                                     </div>
                                     <div class="frm-field">
@@ -1188,7 +1188,7 @@
                         <div class="frm-row-submit">
                             <div class="frm-field">
                                 <button type="submit" class="btn button-att-third">
-                                    <div class="button-title">Отправить заявку</div>
+                                    <span class="button-title">Отправить заявку</span>
                                 </button>
                             </div>
                             <div class="frm-field text-center">
@@ -1208,7 +1208,7 @@
         <!--/popup-outer-box-->
 
         <!--popup-outer-box-->
-        <div class="popup-outer-box popup-cookie" id="cookie_notification">
+        <div class="popup-outer-box popup-cookie active" id="cookie_notification">
             <div class="popup-box">
                 <div class="popup-content-wrap">
                     <div class="popup-cookie-box">
