@@ -946,7 +946,7 @@
                                         <label for="del02">Почта России</label>
                                     </div>
                                     <div class="frm-select">
-                                        <input type="radio" name="delivery" id="del03" data-content="" />
+                                        <input type="radio" name="delivery" id="del03" data-content="pay" />
                                         <label for="del03">Самовывоз</label>
                                     </div>
                                 </div>
@@ -971,13 +971,17 @@
                                         <input type="radio" name="pay" id="pay01" checked />
                                         <label for="pay01">Картой онлайн</label>
                                     </div>
-                                    <div class="frm-select">
-                                        <input type="radio" name="pay" id="pay02" />
-                                        <label for="pay02">Картой при получении оставить (только при самовывозе)</label>
-                                    </div>
-                                    <div class="frm-select">
-                                        <input type="radio" name="pay" id="pay03" />
-                                        <label for="pay03">Наличными при получении (только при самовывозе)</label>
+                                    <div class="frm-content" data-content="pay">
+                                        <div class="frm-select">
+                                            <input type="radio" name="pay" id="pay02" />
+                                            <label for="pay02">
+                                                Картой при получении оставить (только при самовывозе)
+                                            </label>
+                                        </div>
+                                        <div class="frm-select">
+                                            <input type="radio" name="pay" id="pay03" />
+                                            <label for="pay03">Наличными при получении (только при самовывозе)</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
