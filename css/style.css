@@ -1955,37 +1955,22 @@ body:has(.action-search .btn-popup.active) .wrap {
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
-.elm-photo.photo-play:hover:after {
-  background-color: var(--clr-att-second);
-}
-.elm-photo.photo-play:after {
+.elm-photo.photo-play:before {
   content: "";
-  display: block;
+  display: block !important;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 3;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--clr-att) url(../../img/icons/play.svg) center no-repeat;
-  background-size: 24px auto;
+  background: rgba(0, 0, 0, 0.5) url(../img/icons/play.svg) center no-repeat;
+  background-size: 80px auto;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
   margin: auto;
-}
-.elm-photo.photo-play:before {
-  display: block !important;
-  background: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0;
-  z-index: 2;
+  -webkit-filter: none;
+  filter: none;
 }
 .elm-photo.photo-zoom:after {
   content: "";
@@ -3197,6 +3182,9 @@ body:has(.action-search .btn-popup.active) .wrap {
 .tiles-thumbs-slider-box .slider-photos-thumbs .elm-photo {
   aspect-ratio: 118/144;
   cursor: pointer;
+}
+.tiles-thumbs-slider-box .slider-photos-thumbs .elm-photo.photo-play:before {
+  background-size: 40px auto;
 }
 .tiles-thumbs-slider-box .slider-photos-thumbs .elm-photo:after {
   content: "";
