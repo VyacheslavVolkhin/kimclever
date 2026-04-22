@@ -3560,11 +3560,23 @@ body:has(.action-search .btn-popup.active) .wrap {
   margin-bottom: 0;
 }
 .tabs-box {
-  margin-bottom: 5rem;
+  margin-bottom: 20px;
   position: relative;
+}
+.tabs-box:has(+ .tiles-box) {
+  margin-bottom: 5rem;
 }
 .tabs-box:last-child {
   margin-bottom: 0;
+}
+.tabs-box .li-exit {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: right;
+}
+.tabs-box .li-exit .button-border:not(:hover) {
+  background-color: rgba(177, 0, 88, 0.08);
 }
 .tabs-box .menu {
   display: -webkit-box;
@@ -4087,6 +4099,9 @@ body:has(.action-search .btn-popup.active) .wrap {
   }
   .info-contacts-box {
     font-size: 18px;
+  }
+  .tabs-box .li-exit {
+    text-align: left;
   }
   .tabs-box .btn {
     min-width: 0;
@@ -4999,6 +5014,21 @@ select.form-input:required:invalid {
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
+.frm-field-message {
+  display: block;
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.15;
+  border: 1px solid #d0d3dd;
+  width: 100%;
+  text-align: left;
+  letter-spacing: 0.04em;
+  padding-left: 33px;
+  padding-top: 1.4em;
+  padding-bottom: 1.4em;
+  padding-right: 1em;
+}
 .frm-main-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5294,6 +5324,10 @@ select.form-input:required:invalid {
   font-size: 24px;
   line-height: 140%;
 }
+.frm-field-input.inp-valid .field-title ~ .form-input {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
 .frm-field-input.inp-valid[data-title]:before {
   content: attr(data-title);
   padding: 0 2.9rem;
@@ -5526,6 +5560,9 @@ select.form-input:required:invalid {
   opacity: 0;
 }
 @media (max-width: 1023px) {
+  .frm-field-message {
+    padding-left: 2.4rem;
+  }
   .frm-field-input.type-invert .field-title {
     bottom: 10px;
   }
