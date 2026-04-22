@@ -3075,6 +3075,46 @@ body:has(.action-search .btn-popup.active) .wrap {
 .info-card-box .section-select-wrap {
   margin-bottom: 2.4rem;
 }
+.info-card-box .section-select-wrap .frm-row:last-child {
+  padding-bottom: 2rem;
+}
+.info-card-box .section-select-wrap .frm-field-select {
+  width: 100%;
+}
+.info-card-box .section-select-wrap .frm-field-select .select-content-block {
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 0 0 0;
+}
+.info-card-box .section-select-wrap .frm-field-select .btn-select {
+  height: 56px;
+  padding: 0 6rem 0 2.4rem;
+  border-color: var(--clr-bg-light);
+  background-color: var(--clr-bg-light);
+}
+.info-card-box .section-select-wrap .frm-field-select .btn-select .button-title {
+  width: 100%;
+  text-align: left;
+}
+.info-card-box .section-select-wrap .frm-field-select .btn-select .button-title:after {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  margin: -11px 0 0 0;
+}
+.info-card-box .frm-field-select {
+  width: 100%;
+}
+.info-card-box .frm-field-select .select-content-block {
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 0 0 0;
+}
+.info-card-box .section-content-wrap {
+  position: relative;
+}
 .info-card-box .section-title-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3110,15 +3150,6 @@ body:has(.action-search .btn-popup.active) .wrap {
 .info-card-box .frm-select input:not(:checked) ~ label {
   color: rgba(39, 39, 39, 0.55);
 }
-.info-card-box .frm-field-select {
-  width: 100%;
-}
-.info-card-box .frm-field-select .select-content-block {
-  left: 0;
-  right: 0;
-  width: 100%;
-  margin: 0 0 0 0;
-}
 .info-card-box .field-half {
   width: 50%;
 }
@@ -3133,6 +3164,9 @@ body:has(.action-search .btn-popup.active) .wrap {
 }
 .info-card-box .h1-title {
   margin-bottom: 5px;
+}
+.info-card-box select.form-input {
+  height: 56px;
 }
 .info-card-box .elm-price {
   font-weight: 400;
@@ -4475,11 +4509,10 @@ input.form-input-select {
   display: block;
   text-overflow: ellipsis;
   width: 100%;
-  padding-right: 30px;
+  padding-right: 6rem;
   background-image: url(../img/icons/arrow-select.svg);
-  background-position: right 20px center;
-  background-size: 24px auto;
-  background-color: #fff;
+  background-position: right 2rem center;
+  background-size: 22px auto;
   background-repeat: no-repeat;
   -moz-appearance: none;
   -ms-appearance: none;
