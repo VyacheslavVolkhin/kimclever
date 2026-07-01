@@ -3422,6 +3422,19 @@ body:has(.action-search .btn-popup.active) .wrap {
   margin-bottom: var(--sectionMargin);
   position: relative;
 }
+.form-box .frm-content.active {
+  margin-bottom: 15px;
+}
+.form-box .frm-content .frm-field {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form-box .frm-content .frm-field:last-child {
+  margin-bottom: 0;
+}
+.form-box .frm-field .frm-field {
+  padding: 0;
+}
 .form-box .frm-section-title {
   font-weight: 600;
   font-size: 3rem;
@@ -5523,6 +5536,20 @@ select.form-input:required:invalid {
 .frm-select-button label:after {
   opacity: 0;
 }
+.frm-select input:checked ~ .lbl-selected-content,
+.frm-select-button input:checked ~ .lbl-selected-content {
+  height: auto;
+  padding-top: 10px;
+}
+.frm-select .lbl-selected-content,
+.frm-select-button .lbl-selected-content {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  interpolate-size: allow-keywords;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
 .frm-select-button {
   line-height: 1;
   position: relative;
@@ -5592,6 +5619,9 @@ select.form-input:required:invalid {
   background: url(../img/icons/check.svg) center / 24px auto no-repeat;
   opacity: 0;
 }
+.frm-select .lbl-selected-content {
+  padding-left: 50px;
+}
 @media (max-width: 1023px) {
   .frm-field-message {
     padding-left: 2.4rem;
@@ -5641,6 +5671,9 @@ select.form-input:required:invalid {
   }
   .frm-select label:after {
     background-size: 16px auto;
+  }
+  .frm-select .lbl-selected-content {
+    padding-left: 24px;
   }
 }
 /* ----------------------------------- *\
