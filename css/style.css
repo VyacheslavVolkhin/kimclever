@@ -3032,6 +3032,12 @@ body:has(.action-search .btn-popup.active) .wrap {
   -o-object-fit: cover;
   object-fit: cover;
 }
+.info-lead-box .sl-wrap:has(video) .sl-inner-wrap {
+  pointer-events: none;
+}
+.info-lead-box .sl-wrap:has(video) .sl-inner-wrap .btn {
+  pointer-events: auto;
+}
 .page-full:has(.info-card-box) .breadcrumbs-box {
   padding-left: 50%;
 }
