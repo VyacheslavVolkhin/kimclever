@@ -7300,13 +7300,34 @@ body.popup-open {
 .popup-box .form-box .frm-row-submit .frm-select {
   text-align: left;
 }
+.pochta-sidebar {
+  bottom: 10px !important;
+  height: auto !important;
+  max-height: 100% !important;
+  font-size: 14px;
+  line-height: 1.15;
+  max-width: calc(100% - 20px);
+}
 .pochta-sidebar table thead th,
 .pochta-sidebar table tbody th,
 .pochta-sidebar table thead td,
 .pochta-sidebar table tbody td {
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 8[px];
+  padding-bottom: 8[px];
   font-size: 14px;
+  height: auto;
+}
+.pochta-sidebar .btn {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.pochta-sidebar h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
 }
 @media (max-width: 1399px) {
   .popup-cookie .popup-box {
