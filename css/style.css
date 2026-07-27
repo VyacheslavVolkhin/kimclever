@@ -973,6 +973,11 @@ body:has(.action-search .btn-popup.active) .wrap {
   -ms-flex-pack: center;
   justify-content: center;
 }
+.popup-menu-wrap .contacts-content-block .soc-mobile-wrap .button-ico img,
+.popup-menu-wrap .contacts-content-block .soc-mobile-wrap .button-ico svg {
+  max-width: 60%;
+  max-height: 60%;
+}
 .popup-menu-wrap .contacts-content-block .soc-mobile-wrap .button-ico:not(:hover) {
   -webkit-filter: var(--filterAttToLight);
   filter: var(--filterAttToLight);
@@ -2836,7 +2841,7 @@ body:has(.action-search .btn-popup.active) .wrap {
 }
 .item-tile-cnt .btn .button-ico {
   margin: 0 auto;
-  width: 60%;
+  width: 45%;
   height: auto;
   aspect-ratio: 1;
 }
