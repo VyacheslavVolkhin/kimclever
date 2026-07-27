@@ -778,6 +778,11 @@ body:has(.action-search .btn-popup.active) .wrap {
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
+.header .soc-wrap .button-ico img,
+.header .soc-wrap .button-ico svg {
+  max-width: 57%;
+  max-height: 57%;
+}
 .header .soc-wrap .button-ico:not(:hover) {
   -webkit-filter: var(--filterAttToBaseTitle);
   filter: var(--filterAttToBaseTitle);
@@ -1099,6 +1104,8 @@ body:has(.action-search .btn-popup.active) .wrap {
 }
 .footer .soc-wrap .button-ico img,
 .footer .soc-wrap .button-ico svg {
+  max-width: 42%;
+  max-height: 42%;
   -webkit-filter: var(--filterAttToLight);
   filter: var(--filterAttToLight);
 }
