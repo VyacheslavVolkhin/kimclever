@@ -1060,6 +1060,9 @@ body:has(.action-search .btn-popup.active) .wrap {
   flex-wrap: wrap;
   margin-bottom: 10px;
 }
+.footer .cnt-wrap .footer-contact {
+  margin-bottom: 0;
+}
 .footer .cnt-wrap:last-child {
   margin-bottom: 0;
 }
