@@ -3010,6 +3010,9 @@ body:has(.action-search .btn-popup.active) .wrap {
     -ms-flex-align: center;
     align-items: center;
   }
+  .item-tile-photo .tile-photo-wrap:last-child {
+    width: 50%;
+  }
   .item-tile-photo .elm-photo {
     height: auto;
     aspect-ratio: 162/200;
